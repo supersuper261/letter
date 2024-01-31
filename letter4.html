@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Envelope Animation</title>
+    <title>Animated Envelope</title>
 </head>
 <body>
-    <div class="envelope" onclick="toggleEnvelope()">
+    <div class="envelope" onclick="toggleEnvelope(this)">
         <div class="front">
             <div class="address">
-                <p>To Liyann,</p>
+                <p>To Liyann,</p> 
                 <p>sorry</p>
             </div>
             <div class="stamp">October 30, 2021</div>
         </div>
         <div class="back">
-            <div class="letter">
-                <p>
-                    I know this letter is super late, pero sana makahanap ako ng time para mabigay ko sayo parin. Na I have been thinking about the unspoken issues between us and want to discuss how my actions have affected our relationship.
+            <div class="letter-container">
+                <p class="letter">
+                    <!-- Your letter content goes here -->
                 </p>
-                <!-- Rest of the letter content -->
             </div>
         </div>
     </div>
-    <button onclick="sendLetter()">Send</button>
     <script src="script.js"></script>
 </body>
 </html>
