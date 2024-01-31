@@ -34,7 +34,7 @@ body {
     padding: 20px;
     transform: rotateY(0deg);
     transition: transform 0.5s ease;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .back {
@@ -48,7 +48,7 @@ body {
     border-radius: 5px;
     font-family: Arial, sans-serif;
     overflow: auto;
-    font-size: 12px
+    font-size: 12px;
 }
 
 .envelope.open .front {
@@ -63,6 +63,7 @@ body {
 .letter {
     font-size: 14px;
     line-height: 1.5;
+    transition: transform 1s ease;
 }
 
 /* Add more styles as needed */
@@ -81,4 +82,11 @@ body {
 /* On hover effect */
 .envelope:hover {
     transform: scale(1.05);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
