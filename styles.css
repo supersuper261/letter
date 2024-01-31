@@ -10,7 +10,7 @@ body {
 .envelope {
     position: relative;
     width: 300px;
-    height: 650px;
+    height: 400px;
     perspective: 1200px;
     cursor: pointer;
     transition: transform 0.5s ease;
@@ -60,33 +60,14 @@ body {
     transform: rotateY(0deg);
 }
 
-.letter {
-    font-size: 14px;
-    line-height: 1.5;
-    transition: transform 1s ease;
-}
-
-/* Add more styles as needed */
-
-.stamp {
-    align-self: flex-end;
-    font-style: italic;
-    color: #777;
-    font-size: 12px;
-}
-
-.address {
-    font-weight: bold;
+.letter-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* On hover effect */
 .envelope:hover {
     transform: scale(1.05);
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
 }
